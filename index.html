@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{margin: auto;text-align: center;width: 700px;font-family: ' verdana', sans-serif;color: #1A237E}
+
+		.thum{height:200px; opacity: 0.3; display: block;}
+		.thum:hover{ opactiy: 1; }
+		.ra{transform: rotate(-90deg);
+			background: green; position: relative;
+			left:0px; top:110px;
+			align-content: center;}
+
+
+
+	</style>
+
+		
+	</head>
+	<body>
+		<h1>Festival Drop and Music</h1>
+		<img src="111.jpg" class="thum" id="a">
+		<audio src="5tardium.mp4" loop id="aa"></audio>
+		<input type="range" min="0" max="100" id="aaa" class="ra">
+
+		<img src="222.jpg" class="thum" id="b">
+		<audio src="umfkorea.mp4" loop id="bb"></audio>
+		<input type="range" min="0" max="100" id="bbb" class="ra">
+
+		<img src="333.jpg" class="thum" id="c">
+		<audio src="umf1.mp4" loop id="cc"></audio>
+		<input type="range" min="0" max="100" id="ccc" class="ra">
+
+		<img src="444.jpg" class="thum" id="d">
+		<audio src="umf2.mp4" loop id="dd"></audio>
+		<input type="range" min="0" max="100" id="ddd" class="ra">
+
+		<img src="555.jpg" class="thum" id="e">
+		<audio src="umf3.mp4" loop id="ee"></audio>
+		<input type="range" min="0" max="100" id="eee" class="ra">
+		
+
+
+		<script type="text/javascript">
+			
+
+
+
+			aaa.oninput = function(){
+				aa.volume = aaa.value / 100;
+			}
+
+			var astate = "off";
+			a.onclick = function(){
+				if(astate == "off"){
+				
+				a.style.opacity = "1";
+				document.body.style.background = "111.jpg";
+				document.body.style.backgroundSize = "cover";
+				
+
+				aa.volume = 0.5;
+				aa.play();
+				astate = "on";
+				}else{
+					a.style.opacity="0.3";
+					aa.pause();
+					astate = "off";
+				}
+			}
+
+
+			bbb.oninput = function(){
+				bb.volume = bbb.value / 100;
+			}
+
+			var bstate = "off";
+				b.onclick = function(){
+				if(bstate == "off"){
+				b.style.opacity = "1";
+				bb.volume = 0.5;
+				bb.play();
+				bstate = "on";
+				}else{
+					b.style.opacity="0.3";
+					bb.pause();
+					bstate = "off";
+				}
+			}
+
+
+			ccc.oninput = function(){
+				cc.volume = ccc.value / 100;
+			}
+				var cstate = "off";
+			c.onclick = function(){
+				if(cstate == "off"){
+				c.style.opacity = "1";
+				cc.volume = 0.5;
+				cc.play();
+				cstate = "on";
+				}else{
+					c.style.opacity="0.3";
+					cc.pause();
+					cstate = "off";
+				}
+			}
+
+			ddd.oninput = function(){
+				dd.volume = ddd.value / 100;
+			}
+				var dstate = "off";
+			d.onclick = function(){
+				if(dstate == "off"){
+				d.style.opacity = "1";
+				dd.volume = 0.5;
+				dd.play();
+				dstate = "on";
+				}else{
+					d.style.opacity="0.3";
+					dd.pause();
+					dstate = "off";
+				}
+			}
+
+			eee.oninput = function(){
+				ee.volume = eee.value / 100;
+			}
+				var estate = "off";
+			e.onclick = function(){
+				if(estate == "off"){
+				e.style.opacity = "1";
+				ee.volume = 0.5;
+				ee.play();
+				estate = "on";
+				}else{
+					e.style.opacity="0.3";
+					ee.pause();
+					estate = "off";
+				}
+			}
+
+		</script>
+
+
+	</body>
+	</html>
